@@ -27,6 +27,9 @@ services:
       - type: volume
         source: local-db
         target: /var/lib/postgresql/data
+      - type: volume
+        source: pg-socket
+        target: /var/run/postgresql
     environment:
       POSTGRES_USER: illarion
       POSTGRES_PASSWORD: illarion
@@ -50,16 +53,20 @@ services:
       - PHP_PG_ADMIN_SERVER_DEFAULT_DB=illarion
 
   website:
-     image: ghcr.io/illarion-ev/illarion-dev-apache
-     restart: always
-     depends_on:
-       - db
-     ports:
-       - "443:443"
-     volumes:
-       - type: bind
-         source: ${WEBSITE_PATH}
-         target: /var/www/illarion
-         read_only: true
+    image: ghcr.io/illarion-ev/illarion-dev-apache
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "443:443"
+    volumes:
+      - type: bind
+        source: ${WEBSITE_PATH}
+        target: /var/www/illarion
+        read_only: true
+      - type: volume
+        source: pg-socket
+        target: /var/run/postgresql
 volumes:
   local-db:
+  pg-socket:
