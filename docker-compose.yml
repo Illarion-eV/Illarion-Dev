@@ -26,6 +26,8 @@ services:
   db:
     image: ghcr.io/illarion-ev/illarion-dev-postgres
     restart: always
+    ports:
+      - "15432:5432"
     volumes:
       - type: volume
         source: local-db
