@@ -9,7 +9,7 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "3012:3012"
+      - "13000:3012"
     volumes:
       - type: bind
         source: ${SCRIPT_PATH}
