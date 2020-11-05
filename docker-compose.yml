@@ -19,6 +19,9 @@ services:
         source: ${MAP_PATH}
         target: /maps
         read_only: true
+      - type: volume
+        source: pg-socket
+        target: /var/run/postgresql
 
   db:
     image: ghcr.io/illarion-ev/illarion-dev-postgres
