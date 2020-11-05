@@ -1,0 +1,2 @@
+docker rm -v illarion_db_1
+docker volume rm illarion_local-db
