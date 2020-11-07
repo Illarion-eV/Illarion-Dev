@@ -1,0 +1,1 @@
+docker-compose -f db.yml -f illarion.yml kill -s SIGUSR1 game-server

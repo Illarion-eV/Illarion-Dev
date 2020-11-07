@@ -36,7 +36,8 @@ website repository.
 ## 3. Running the server
 
 To start the game server run `start`. Press Ctrl-C to stop it.  
-To additionally run the webserver, run `start-with-webserver` instead.
+To additionally run the webserver, run `start-with-webserver` instead.  
+You can reload maps while the server is running by executing `reload-maps`.
 
 ## 4. Updating the server
 
