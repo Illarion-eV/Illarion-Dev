@@ -1,0 +1,1 @@
+type reset-database | cmd
