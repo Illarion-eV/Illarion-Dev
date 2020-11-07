@@ -40,17 +40,17 @@ To additionally run the webserver, run `start-with-webserver` instead.
 
 ## 4. Updating the server
 
-You should update your local copy of this repository on a regular basis.
+You should keep your local copy of this repository up-to-date.
 
-The database is always a current copy of the official development server database excluding
+The database is initially created as a copy of the official development server database excluding
 character data. You may update the database at any time to incorporate
-changes made to the online database. However, you need to be aware that
+changes made to the online database. However, be aware that
 **_this will overwrite any changes you made to the local database_**.
 To update the database run `reset-database` while the server is down.
 
 ## 5. Script development
 
-Reloading the scripts on the local server works as it does on the official server. 
+Reloading scripts on the local server works as it does on the official server. 
 You need to use the reload command (!fr) in-game for the server to load all scripts.
 
 This server reads scripts directly from your working copy of the
