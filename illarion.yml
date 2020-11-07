@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   game-server:
-    image: vilarion/illarion
+    image: ghcr.io/illarion-ev/illarion-server/base:develop
     restart: unless-stopped
     depends_on:
       db:
