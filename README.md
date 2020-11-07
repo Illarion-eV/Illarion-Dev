@@ -9,7 +9,8 @@ It can also be used for website development as well as for client development.
 ## 1. Preparation
 
 To use the local server you need [Docker](https://www.docker.com). Download and
-install it.
+install it. On Linux you might want to add your user to the `docker` group,
+so that you can run commands without sudo.
 
 You also need the [local server repository](https://github.com/Illarion-eV/Illarion-Dev).
 
