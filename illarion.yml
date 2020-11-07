@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+
+  game-server:
+    image: vilarion/illarion
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "13000:3012"
+    volumes:
+      - type: bind
+        source: ${SCRIPT_PATH}
+        target: /scripts
+        read_only: true
+      - type: bind
+        source: ${MAP_PATH}
+        target: /maps
+        read_only: true
+      - type: volume
+        source: pg-socket
+        target: /var/run/postgresql
+

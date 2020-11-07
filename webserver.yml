@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+
+  website:
+    image: ghcr.io/illarion-ev/illarion-dev-apache
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "443:443"
+    volumes:
+      - type: bind
+        source: ${WEBSITE_PATH}
+        target: /var/www/illarion
+        read_only: true
+      - type: volume
+        source: pg-socket
+        target: /var/run/postgresql

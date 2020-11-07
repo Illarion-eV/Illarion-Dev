@@ -18,7 +18,6 @@ You also need the [local server repository](https://github.com/Illarion-eV/Illar
 You _need_ both the script and the maps repository. Without
 _both_ you cannot use the server. For website development you will also need the 
 website repository.
-???(Currently needs all three repos.)
 **Copy the file `.env.dist` to `.env` and fill in all required repository paths in your copy**.
 
 ##### For Illarion developers with push access:
@@ -35,7 +34,8 @@ website repository.
 
 ## 3. Running the server
 
-To start the server run `start`. Press Ctrl-C to stop it.
+To start the game server run `start`. Press Ctrl-C to stop it.
+To additionally run the webserver, run `start-with-webserver` instead.
 
 ## 4. Updating the server
 

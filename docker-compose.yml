@@ -2,27 +2,6 @@ version: "3.8"
 
 services:
 
-  game-server:
-    image: vilarion/illarion
-    restart: unless-stopped
-    depends_on:
-      db:
-        condition: service_healthy
-    ports:
-      - "13000:3012"
-    volumes:
-      - type: bind
-        source: ${SCRIPT_PATH}
-        target: /scripts
-        read_only: true
-      - type: bind
-        source: ${MAP_PATH}
-        target: /maps
-        read_only: true
-      - type: volume
-        source: pg-socket
-        target: /var/run/postgresql
-
   db:
     image: ghcr.io/illarion-ev/illarion-dev-postgres
     restart: always
@@ -57,21 +36,6 @@ services:
       - PHP_PG_ADMIN_SERVER_HOST=db
       - PHP_PG_ADMIN_SERVER_DEFAULT_DB=illarion
 
-  website:
-    image: ghcr.io/illarion-ev/illarion-dev-apache
-    restart: always
-    depends_on:
-      - db
-    ports:
-      - "443:443"
-    volumes:
-      - type: bind
-        source: ${WEBSITE_PATH}
-        target: /var/www/illarion
-        read_only: true
-      - type: volume
-        source: pg-socket
-        target: /var/run/postgresql
 volumes:
   local-db:
   pg-socket:
