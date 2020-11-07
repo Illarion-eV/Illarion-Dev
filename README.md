@@ -35,7 +35,7 @@ website repository.
 
 ## 3. Running the server
 
-To start the game server run `start`. Press Ctrl-C to stop it.
+To start the game server run `start`. Press Ctrl-C to stop it.  
 To additionally run the webserver, run `start-with-webserver` instead.
 
 ## 4. Updating the server
@@ -69,15 +69,15 @@ To merge your work on magic into develop, simply checkout develop and then run `
 
 ## 6. Database access
 
-Use e.g. [pgAdmin](http://www.pgadmin.org) or `psql` to access the database from your OS.
-Hostname: localhost
+Use e.g. [pgAdmin](http://www.pgadmin.org) or `psql` to access the database from your OS.  
+Hostname: localhost  
 Port: 15432
 
 You can also use phpPgAdmin within your browser, this is the same method we use
 for development on the official server: http://localhost:8080/
 
-Login information:
-User: illarion
+Login information:  
+User: illarion  
 Password: illarion
 
 ## 7. Connecting to the game
@@ -89,8 +89,8 @@ update channel under "Options" accordingly.
 
 After launching the client, hit "Options" and select the server category.
 
-Server address: localhost
-Server port: 13000
+Server address: localhost  
+Server port: 13000  
 Account login: disabled
 
 Save and go back to the login screen.
