@@ -96,8 +96,8 @@ Account login: disabled
 
 Save and go back to the login screen.
 Select the user-defined server.
-Now you can login with the default character:
-Name: Testserver One
+Now you can login with the default character:  
+Name: Testserver One  
 Password: test
 
 Of course you can add new characters to the database.
