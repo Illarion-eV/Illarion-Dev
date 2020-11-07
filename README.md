@@ -18,7 +18,7 @@ You also need a local copy of this repository. You can find the [official reposi
 You _need_ both the script and the maps repository. Without
 _both_ you cannot use the server. For website development you will also need the 
 website repository.
-**Copy the file `.env.dist` to `.env` and fill in all required repository paths in your copy**.
+**Copy the file `.env.dist` and name that copy `.env`. Using a text editor, fill in all required repository paths in `.env`**.
 
 ##### For Illarion developers with push access:
 
