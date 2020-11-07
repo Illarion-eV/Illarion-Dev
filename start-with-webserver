@@ -1,2 +1,2 @@
-docker-compose -f docker-compose.yml -f illarion.yml -f webserver.yml pull
-docker-compose -f docker-compose.yml -f illarion.yml -f webserver.yml up
+docker-compose -f db.yml -f illarion.yml -f webserver.yml pull
+docker-compose -f db.yml -f illarion.yml -f webserver.yml up
