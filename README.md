@@ -35,7 +35,7 @@ For unused repositories paths can be left blank.
 
 ## 3. Running the server
 
-To start the game server run `start`. Press Ctrl-C to stop it.  
+To start the game server run `start`. Press <kbd>ctrl</kbd>+<kbd>c</kbd> to stop it.  
 To additionally run the webserver, run `start-with-webserver` instead.  
 You can reload maps while the server is running by executing `reload-maps`.
 
