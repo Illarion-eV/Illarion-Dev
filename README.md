@@ -21,17 +21,23 @@ website repository.
 **Copy the file `.env.dist` and name that copy `.env`. Using a text editor, fill in local repository paths in `.env`**.
 For unused repositories paths can be left blank.
 
-##### For Illarion developers with push access:
+### Where to get your local repository from:
 
-* Script repository: ssh://git@illarion.org:1010/scripts
-* Map repository: ssh://git@illarion.org:1010/maps
-* Website repository: ssh://git@illarion.org:1010/website
+While you can clone the official GitHub repositories to your disk directly, it is **highly recommended** that you fork
+them on GitHub first and clone from your own fork. This way you can push changes to your GitHub repository and then
+issue a pull request against the official repository to have your changes included.
 
-##### For everyone else:
+#### Official Illarion GitHub repositories:
 
-* Script repository: https://github.com/Illarion-eV/Illarion-Content
-* Map repository: https://github.com/Illarion-eV/Illarion-Map
-* Website repository: https://github.com/Illarion-eV/Illarion-Website
+* Scripts: https://github.com/Illarion-eV/Illarion-Content
+* Maps: https://github.com/Illarion-eV/Illarion-Map
+* Website: https://github.com/Illarion-eV/Illarion-Website
+
+#### For Illarion developers with push access only:
+
+* Scripts: ssh://git@illarion.org:1010/scripts
+* Maps: ssh://git@illarion.org:1010/maps
+* Website: ssh://git@illarion.org:1010/website
 
 ## 3. Running the server
 
