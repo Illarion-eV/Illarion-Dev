@@ -20,6 +20,11 @@ services:
         target: /maps
         read_only: true
       - type: volume
+        source: saved-maps
+        target: /usr/share/illarion/map
+      - type: volume
         source: pg-socket
         target: /var/run/postgresql
 
+volumes:
+  saved-maps:
