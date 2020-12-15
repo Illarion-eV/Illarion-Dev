@@ -45,15 +45,19 @@ To start the game server run `start`. Press <kbd>ctrl</kbd>+<kbd>c</kbd> to stop
 To additionally run the webserver, run `start-with-webserver` instead.  
 You can reload maps while the server is running by executing `reload-maps`.
 
-## 4. Updating the server
+## 4. Connecting to the game
 
-You should keep your local copy of this repository up-to-date.
+Fire up the [Illarion loader](http://illarion.org/illarion/us_java_download.php) as usual.
 
-The database is initially created as a copy of the official development server database excluding
-character data. You may update the database at any time to incorporate
-changes made to the online database. However, be aware that
-**_this will overwrite any changes you made to the local database_**.
-To update the database run `reset-database` while the server is down.
+You want to use the development client, so you need to adjust the
+update channel under "Options" accordingly.
+
+After launching the client, select the **local** server. Now you can login with the default character:  
+* Name: Testserver One
+* Password: test
+
+The character "Testserver Two" is also provided, if you need to test with multiple characters.
+Of course you can also add new characters to the database.
 
 ## 5. Script development
 
@@ -87,19 +91,15 @@ Login information:
 * User: illarion  
 * Password: illarion
 
-## 7. Connecting to the game
+## 7. Updating the server
 
-Fire up the [Illarion loader](http://illarion.org/illarion/us_java_download.php) as usual.
+You should keep your local copy of this repository up-to-date.
 
-You want to use the development client, so you need to adjust the
-update channel under "Options" accordingly.
-
-After launching the client, select the **local** server. Now you can login with the default character:  
-* Name: Testserver One
-* Password: test
-
-The character "Testserver Two" is also provided, if you need to test with multiple characters.
-Of course you can also add new characters to the database.
+The database is initially created as a copy of the official development server database excluding
+character data. You may update the database at any time to incorporate
+changes made to the online database. However, be aware that
+**_this will overwrite any changes you made to the local database_**.
+To update the database run `reset-database` while the server is down.
 
 ## 8. Using the local web server
 
