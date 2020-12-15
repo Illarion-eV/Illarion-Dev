@@ -77,15 +77,15 @@ To merge your work on magic into develop, simply checkout develop and then run `
 ## 6. Database access
 
 Use e.g. [pgAdmin](http://www.pgadmin.org) or `psql` to access the database from your OS.  
-Hostname: localhost  
-Port: 15432
+* Hostname: localhost  
+* Port: 15432
 
 You can also use phpPgAdmin within your browser, this is the same method we use
 for development on the official server: http://localhost:8080/
 
 Login information:  
-User: illarion  
-Password: illarion
+* User: illarion  
+* Password: illarion
 
 ## 7. Connecting to the game
 
@@ -111,7 +111,7 @@ an overview where you can find the location for your operating system:
 http://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system
 
 Open the file with admin privileges and add a line at the end:
-127.0.0.1 illarion.org
+`127.0.0.1 illarion.org`
 
 When the server is running you can now access your local copy of the website at
 https://illarion.org
