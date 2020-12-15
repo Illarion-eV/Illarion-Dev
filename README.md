@@ -94,19 +94,12 @@ Fire up the [Illarion loader](http://illarion.org/illarion/us_java_download.php)
 You want to use the development client, so you need to adjust the
 update channel under "Options" accordingly.
 
-After launching the client, hit "Options" and select the server category.
+After launching the client, select the **local** server. Now you can login with the default character:  
+* Name: Testserver One
+* Password: test
 
-Server address: localhost  
-Server port: 13000  
-Account login: disabled
-
-Save and go back to the login screen.
-Select the user-defined server.
-Now you can login with the default character:  
-Name: Testserver One  
-Password: test
-
-Of course you can add new characters to the database.
+The character "Testserver Two" is also provided, if you need to test with multiple characters.
+Of course you can also add new characters to the database.
 
 ## 8. Using the local web server
 
