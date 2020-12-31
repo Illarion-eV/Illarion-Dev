@@ -66,8 +66,7 @@ You need to use the reload command (!fr) in-game for the server to load all scri
 
 This server reads scripts directly from your working copy of the
 scripts repository. This means you do not need to commit them for testing.
-You can commit whenever a logical step has been completed, but
-push working states _only_!
+You can commit whenever a logical step has been completed.
 
 You need to commit and push your changes in order to allow others to see and test them.
 If you are unfamiliar with Git, you could take a look at the [Pro Git book](https://git-scm.com/book/en/v2).
