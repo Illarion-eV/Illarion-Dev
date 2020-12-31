@@ -106,9 +106,7 @@ To update the database run `reset-database` while the server is down.
 You can also use the local server for website development. For that you need to
 set up the website folder as described in step 2 prior to starting the server. Also
 you need to make your system believe that your server is actually illarion.org by
-editing your hosts config file. If you have no idea where that might be, here is
-an overview where you can find the location for your operating system:
-http://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system
+editing your [hosts config file](http://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system).
 
 Open the file with admin privileges and add a line at the end:
 `127.0.0.1 illarion.org`
@@ -116,4 +114,6 @@ Open the file with admin privileges and add a line at the end:
 When the server is running you can now access your local copy of the website at
 https://illarion.org
 
-Log into the website with user test and password test.
+Website Login:
+* User: test
+* Password: test
