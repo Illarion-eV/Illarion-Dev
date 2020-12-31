@@ -69,7 +69,8 @@ scripts repository. This means you do not need to commit them for testing.
 You can commit whenever a logical step has been completed.
 
 You need to commit and push your changes in order to allow others to see and test them.
-If you are unfamiliar with Git, you could take a look at the [Pro Git book](https://git-scm.com/book/en/v2).
+If you are unfamiliar with Git, you could take a look at the [Pro Git book](https://git-scm.com/book/en/v2)
+or other [tutorials](http://try.github.io/), depending on your preference.
 
 Each feature you are working on should have its own dedicated branch.
 You can create a branch for working on magic with `git branch feature/magic`.
