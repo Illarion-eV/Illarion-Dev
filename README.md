@@ -41,7 +41,7 @@ issue a pull request against the official repository to have your changes includ
 
 ## 3. Running the server
 
-To start the game server run `start`. Press <kbd>ctrl</kbd>+<kbd>c</kbd> to stop it.  
+To start the game server run `start` on Linux or `start.bat` on Windows. Press <kbd>ctrl</kbd>+<kbd>c</kbd> to stop it.  
 To additionally run the webserver, run `start-with-webserver` instead.  
 You can reload maps while the server is running by executing `reload-maps`.
 
