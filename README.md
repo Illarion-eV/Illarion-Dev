@@ -8,18 +8,21 @@ It can also be used for website development as well as for client development.
 
 ## 1. Preparation
 
-To use the local server you need to [download and install Docker](https://docs.docker.com/engine/install/).  
+To use the local server you need
+* to [download and install Docker](https://docs.docker.com/engine/install/).
 **Carefully follow the installation instructions for your OS.**
-
-You also need a local copy of this repository. You can find the [official repository on GitHub](https://github.com/Illarion-eV/Illarion-Dev).
+* a local copy of this repository. You can find the
+[official repository on GitHub](https://github.com/Illarion-eV/Illarion-Dev).
 
 ## 2. Setup
 
 You _need_ both the script and the maps repository. Without
 _both_ you cannot use the server. For website development you will also need the 
 website repository.
-**Copy the file `.env.dist` and name that copy `.env`. Using a text editor, fill in local repository paths in `.env`**.
-For unused repositories paths can be left blank.
+
+1. Copy the file `.env.dist` and name that copy `.env`.
+2. Using a text editor, fill in local repository paths in `.env`.
+3. For unused repositories paths can be left blank.
 
 ### Where to get your local repository from:
 
@@ -31,11 +34,15 @@ If you were asked to test a specific new feature, you have been given URLs to sn
 * Scripts: https://github.com/some-user-name/Illarion-Content/tree/some-feature-name
 * Maps: https://github.com/some-user-name/Illarion-Map/tree/some-feature-name
 
-For each, click the green button labled "Code" and select "Download ZIP". Unzip each to a convenient
-location and enter both paths to these locations into your `.env` file.
+1. For each, click the green button labled "Code" and select "Download ZIP".
+2. Unzip each to a convenient location.
+3. Enter the paths to these locations into your `.env` file.
 
-Now you can [start](#3-running-the-server) or restart (after getting a new set of URLs) the server and
-[connect to the game](#4-connecting-to-the-game) to conduct your tests.
+Now you can
+
+1. [Start](#3-running-the-server) or restart (after getting a new set of URLs) the server.
+2. [Reload your maps](#3-running-the-server).
+3. [Connect to the game](#4-connecting-to-the-game) to conduct your tests.
 
 ---
 
@@ -59,15 +66,16 @@ issue a pull request against the official repository to have your changes includ
 
 ## 3. Running the server
 
-To start the game server run `start` on Linux or `start.bat` on Windows. Press <kbd>ctrl</kbd>+<kbd>c</kbd> to stop it.  
-To additionally run the webserver, run `start-with-webserver` instead.  
-You can reload maps while the server is running by executing `reload-maps`.
+* To start the game server, open a console and run `start` on Linux or `start.bat` on Windows.
+* Press <kbd>ctrl</kbd>+<kbd>c</kbd> in that console to stop the server.
+* To additionally run the webserver, run `start-with-webserver` instead.
+* You can reload maps _while the server is running_ by executing `reload-maps`.
 
 ## 4. Connecting to the game
 
 Fire up the [Illarion loader](http://illarion.org/illarion/us_java_download.php) as usual.
 
-You want to use the development client, so you need to adjust the
+You want to use the development client, so in your Illarion loader you need to adjust the
 update channel under "Options" accordingly.
 
 After launching the client, select the **local** server. Now you can login with the default character:  
@@ -91,10 +99,10 @@ If you are unfamiliar with Git, you could take a look at the [Pro Git book](http
 or other [tutorials](http://try.github.io/), depending on your preference.
 
 Each feature you are working on should have its own dedicated branch.
-You can create a branch for working on magic with `git branch feature/magic`.
-Switching to that branch is done by `git checkout feature/magic`.
-You can even push your branches to your github account to share your work with others for collaboration and testing.
-To merge your work on magic into develop, simply checkout develop and then run `git merge feature/magic`.
+* You can create a branch for working on magic with `git branch feature/magic`.
+* Switching to that branch is done by `git checkout feature/magic`.
+* You can even push your branches to your github account to share your work with others for collaboration and testing.
+* To merge your work on magic into develop, simply checkout develop and then run `git merge feature/magic`.
 
 ## 6. Database access
 
