@@ -113,16 +113,15 @@ Each feature you are working on should have its own dedicated branch.
 
 ## 6. Database access
 
-Use e.g. [pgAdmin](http://www.pgadmin.org) or `psql` to access the database from your OS.  
-* Hostname: localhost  
-* Port: 15432
-
-You can also use phpPgAdmin within your browser, this is the same method we use
-for development on the official server: http://localhost:8080/
+While the server is running, access the database within your browser: http://localhost:8080/
 
 Login information:  
 * User: illarion  
 * Password: illarion
+
+If you prefer other tools like [pgAdmin](http://www.pgadmin.org) or `psql` you will need additional connection details:
+* Hostname: localhost
+* Port: 15432
 
 ## 7. Updating the server
 
