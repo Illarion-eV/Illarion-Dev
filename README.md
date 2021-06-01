@@ -96,6 +96,7 @@ and run them.
 5. [Connect](#4-connecting-to-the-game) to the game.
 6. Run !fr inside the game to reload the database.
 7. Conduct your tests.
+8. Give a test report in the pull request you got the URLs from.
 
 ## 6. Script development
 
