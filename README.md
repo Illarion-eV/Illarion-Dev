@@ -23,17 +23,35 @@ For unused repositories paths can be left blank.
 
 ### Where to get your local repository from:
 
+#### For testing only:
+
+If you were asked to test a specific new feature, you have been given URLs to snapshots of both the scripts
+(Illarion-Content) and maps (Illarion-Maps) repositories on GitHub. These will look like this:
+
+* Scripts: https://github.com/some-user-name/Illarion-Content/tree/some-feature-name
+* Maps: https://github.com/some-user-name/Illarion-Map/tree/some-feature-name
+
+For each, click the green button labled "Code" and select "Download ZIP". Unzip each to a convenient
+location and enter both paths to these locations into your `.env` file.
+
+Now you can [start](#3-running-the-server) or restart (after getting a new set of URLs) the server and
+[connect to the game](#4-connecting-to-the-game) to conduct your tests.
+
+---
+
+#### Development:
+
 While you can clone the official GitHub repositories to your disk directly, it is **highly recommended** that you fork
 them on GitHub first and clone from your own fork. This way you can push changes to your GitHub repository and then
 issue a pull request against the official repository to have your changes included.
 
-#### Official Illarion GitHub repositories:
+##### Official Illarion GitHub repositories:
 
 * Scripts: https://github.com/Illarion-eV/Illarion-Content
 * Maps: https://github.com/Illarion-eV/Illarion-Map
 * Website: https://github.com/Illarion-eV/Illarion-Website
 
-#### For Illarion developers with push access only:
+##### For Illarion developers with push access only:
 
 * Scripts: ssh://git@illarion.org:1010/scripts
 * Maps: ssh://git@illarion.org:1010/maps
