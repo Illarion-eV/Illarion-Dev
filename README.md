@@ -22,7 +22,7 @@ website repository.
 
 1. Copy the file `.env.dist` and name that copy `.env`.
 2. Using a text editor, fill in local repository paths in `.env`.
-3. For unused repositories paths can be left blank.
+3. For unused repositories, paths can be left blank.
 
 ### Where to get your local repository from:
 
@@ -34,7 +34,7 @@ If you were asked to test a specific new feature, you have been given URLs to sn
 * Scripts: https://github.com/some-user-name/Illarion-Content/tree/some-feature-name
 * Maps: https://github.com/some-user-name/Illarion-Map/tree/some-feature-name
 
-1. For each, click the green button labled "Code" and select "Download ZIP".
+1. For each, click the green button labeled "Code" and select "Download ZIP".
 2. Unzip each to a convenient location.
 3. Enter the paths to these locations into your `.env` file.
 
