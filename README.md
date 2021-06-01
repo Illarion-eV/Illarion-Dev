@@ -42,14 +42,15 @@ Some tests also require changes to the database. In that case, you will have rec
 
 Now you can
 
-1. [Start](#3-running-the-server) or restart (after getting a new set of URLs) the server.
-2. [Reload](#3-running-the-server) your maps.
-3. If you have received SQL commands, [connect to the database](#6-database-access). Then first select "Local Illarion"
+1. Run `reset-database` to get a clean database.
+2. [Start](#3-running-the-server) or restart (after getting a new set of URLs) the server.
+3. [Reload](#3-running-the-server) your maps.
+4. If you have received SQL commands, [connect to the database](#6-database-access). Then first select "Local Illarion"
 and afterwards "illarion" in the left column. Now click "SQL" in the very top right, paste your commands in the window
 and run them.
-4. [Connect](#4-connecting-to-the-game) to the game.
-5. Run !fr inside the game to reload the database.
-6. Conduct your tests.
+5. [Connect](#4-connecting-to-the-game) to the game.
+6. Run !fr inside the game to reload the database.
+7. Conduct your tests.
 
 ---
 
