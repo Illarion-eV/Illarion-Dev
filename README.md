@@ -40,11 +40,11 @@ If you were asked to test a specific new feature, you have been given URLs to sn
 
 Some tests also require changes to the database. In that case, you will have received a set of SQL commands.
 
-Now you can
+Now we are ready to go:
 
-1. Run `reset-database` to get a clean database.
-2. [Start](#3-running-the-server) or restart (after getting a new set of URLs) the server.
-3. [Reload](#3-running-the-server) your maps.
+1. While the server is not running, run `reset-database` to get a clean database.
+2. [Start](#3-running-the-server) the server by running `start`.
+3. [Reload](#3-running-the-server) your maps by running `reload-maps` .
 4. If you have received SQL commands, [connect to the database](#6-database-access). Then first select "Local Illarion"
 and afterwards "illarion" in the left column. Now click "SQL" in the very top right, paste your commands in the window
 and run them.
