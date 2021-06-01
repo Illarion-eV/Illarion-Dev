@@ -40,17 +40,7 @@ If you were asked to test a specific new feature, you have been given URLs to sn
 
 Some tests also require changes to the database. In that case, you will have received a set of SQL commands.
 
-Now we are ready to go:
-
-1. While the server is not running, run `reset-database` to get a clean database.
-2. [Start](#3-running-the-server) the server by running `start`.
-3. [Reload](#3-running-the-server) your maps by running `reload-maps` .
-4. If you have received SQL commands, [connect to the database](#6-database-access). Then first select "Local Illarion"
-and afterwards "illarion" in the left column. Now click "SQL" in the very top right, paste your commands in the window
-and run them.
-5. [Connect](#4-connecting-to-the-game) to the game.
-6. Run !fr inside the game to reload the database.
-7. Conduct your tests.
+You are now ready for [testing](#5-testing).
 
 ---
 
@@ -93,7 +83,21 @@ After launching the client, select the **local** server. Now you can login with 
 The character "Testserver Two" is also provided, if you need to test with multiple characters.
 Of course you can also add new characters to the database.
 
-## 5. Script development
+## 5. Testing
+
+Follow these steps every time you get new URLs or SQL statements for testing:
+
+1. While the server is not running, run `reset-database` to get a clean database.
+2. [Start](#3-running-the-server) the server by running `start`.
+3. [Reload](#3-running-the-server) your maps by running `reload-maps` .
+4. If you have received SQL commands, [connect to the database](#7-database-access). Then first select "Local Illarion"
+and afterwards "illarion" in the left column. Now click "SQL" in the very top right, paste your commands in the window
+and run them.
+5. [Connect](#4-connecting-to-the-game) to the game.
+6. Run !fr inside the game to reload the database.
+7. Conduct your tests.
+
+## 6. Script development
 
 Reloading scripts on the local server works as it does on the official server. 
 You need to use the reload command (!fr) in-game for the server to load all scripts.
@@ -112,7 +116,7 @@ Each feature you are working on should have its own dedicated branch.
 * You can even push your branches to your github account to share your work with others for collaboration and testing.
 * To merge your work on magic into develop, simply checkout develop and then run `git merge feature/magic`.
 
-## 6. Database access
+## 7. Database access
 
 While the server is running, access the database within your browser: http://localhost:8080/
 
@@ -124,7 +128,7 @@ If you prefer other tools like [pgAdmin](http://www.pgadmin.org) or `psql` you w
 * Hostname: localhost
 * Port: 15432
 
-## 7. Updating the server
+## 8. Updating the server
 
 You should keep your local copy of this repository up-to-date.
 
@@ -134,7 +138,7 @@ changes made to the online database. However, be aware that
 **_this will overwrite any changes you made to the local database_**.
 To update the database run `reset-database` while the server is down.
 
-## 8. Using the local web server
+## 9. Using the local web server
 
 You can also use the local server for website development. For that you need to
 set up the website folder as described in step 2 prior to starting the server. Also
