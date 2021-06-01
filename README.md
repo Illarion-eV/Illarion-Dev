@@ -41,8 +41,8 @@ If you were asked to test a specific new feature, you have been given URLs to sn
 Now you can
 
 1. [Start](#3-running-the-server) or restart (after getting a new set of URLs) the server.
-2. [Reload your maps](#3-running-the-server).
-3. [Connect to the game](#4-connecting-to-the-game) to conduct your tests.
+2. [Reload](#3-running-the-server) your maps.
+3. [Connect](#4-connecting-to-the-game) to the game to conduct your tests.
 
 ---
 
