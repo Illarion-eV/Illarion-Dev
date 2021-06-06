@@ -90,9 +90,10 @@ Follow these steps every time you get new URLs or SQL statements for testing:
 1. While the server is not running, run `reset-database` to get a clean database.
 2. [Start](#3-running-the-server) the server by running `start`.
 3. [Reload](#3-running-the-server) your maps by running `reload-maps` .
-4. If you have received SQL commands, [connect to the database](#7-database-access). Then first select "Local Illarion"
-and afterwards "illarion" in the left column. Now click "SQL" in the very top right, paste your commands in the window
-and run them.
+4. If you have received SQL commands:
+    1. [connect to the database](#7-database-access).
+    2. In the left column select `Local Illarion` > `illarion` > `illarionserver`.
+    3. Click `SQL` in the very top right, paste your commands in the large text box and execute them.
 5. [Connect](#4-connecting-to-the-game) to the game.
 6. Run !fr inside the game to reload the database.
 7. Conduct your tests.
