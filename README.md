@@ -21,7 +21,7 @@ _both_ you cannot use the server. For website development you will also need the
 website repository.
 
 1. Copy the file `.env.dist` and name that copy `.env`.
-2. Using a text editor, fill in local repository paths in `.env`.
+2. Using a text editor, fill in local repository paths in `.env`. **You need to use absolute paths.**
 3. For unused repositories, paths can be left blank.
 
 ### Where to get your local repository from:
