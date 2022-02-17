@@ -3,7 +3,12 @@ version: "3.8"
 services:
 
   game-server:
-    image: ghcr.io/illarion-ev/illarion-server/base:develop
+    entrypoint: /usr/local/share/docker-init.sh
+    command: bash -c "cd /server/build && cmake .. && make && /server/build/src/illarion /server/setup/illarion.conf || sleep infinity"
+    build:
+      context: modules/Server/.devcontainer
+      args:
+        VARIANT: bullseye
     restart: unless-stopped
     depends_on:
       db:
@@ -12,13 +17,19 @@ services:
       - "13000:3012"
     volumes:
       - type: bind
-        source: ${SCRIPT_PATH}
+        source: ./modules/Content
         target: /scripts
         read_only: true
       - type: bind
-        source: ${MAP_PATH}
+        source: ./modules/Map
         target: /maps
         read_only: true
+      - type: bind
+        source: ./modules/Server
+        target: /server
+      - type: bind
+        source: ./modules/Server/build
+        target: /server/build
       - type: volume
         source: saved-maps
         target: /usr/share/illarion/map

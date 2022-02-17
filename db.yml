@@ -3,7 +3,8 @@ version: "3.8"
 services:
 
   db:
-    image: ghcr.io/illarion-ev/illarion-dev-postgres
+    build:
+      context: modules/Dev-Postgres
     restart: always
     ports:
       - "15432:5432"

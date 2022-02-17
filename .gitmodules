@@ -1,0 +1,15 @@
+[submodule "modules/Illarion-Server"]
+	path = modules/Server
+	url = git@github.com:Illarion-eV/Illarion-Server
+[submodule "modules/Content"]
+	path = modules/Content
+	url = git@github.com:Illarion-eV/Illarion-Content
+[submodule "modules/Map"]
+	path = modules/Map
+	url = git@github.com:Illarion-eV/Illarion-Map
+[submodule "modules/Website"]
+	path = modules/Website
+	url = git@github.com:Illarion-eV/Illarion-Website
+[submodule "modules/Dev-Postgres"]
+	path = modules/Dev-Postgres
+	url = git@github.com:Illarion-eV/Illarion-Dev-Postgres
