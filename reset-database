@@ -1,3 +1,0 @@
-docker-compose -f db.yml -f illarion.yml stop
-docker rm -v illarion_db_1
-docker volume rm illarion_local-db

@@ -87,7 +87,7 @@ Of course you can also add new characters to the database.
 
 Follow these steps every time you get new URLs or SQL statements for testing:
 
-1. While the server is not running, run `reset-database` to get a clean database.
+1. While the server is not running, run `remove-volumes` to get a clean database.
 2. [Start](#3-running-the-server) the server by running `start`.
 3. [Reload](#3-running-the-server) your maps by running `reload-maps` .
 4. If you have received SQL commands:
@@ -140,7 +140,7 @@ The database is initially created as a copy of the official development server d
 character data. You may update the database at any time to incorporate
 changes made to the online database. However, be aware that
 **_this will overwrite any changes you made to the local database_**.
-To update the database run `reset-database` while the server is down.
+To update the database run `remove-volumes` while the server is down.
 
 ## 9. Using the local web server
 

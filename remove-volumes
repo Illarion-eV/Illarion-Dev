@@ -1,0 +1,1 @@
+docker-compose -f db.yml -f illarion.yml down --volumes
