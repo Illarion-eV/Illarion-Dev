@@ -120,15 +120,17 @@ Each feature you are working on should have its own dedicated branch.
 
 ## 7. Database access
 
-While the server is running, access the database within your browser: http://localhost:8080/
+While the server is running, access the database with [pgAdmin4](http://www.pgadmin.org) within your browser: http://localhost:8080/
 
 Login information:  
 * User: illarion  
 * Password: illarion
 
-If you prefer other tools like [pgAdmin](http://www.pgadmin.org) or `psql` you will need additional connection details:
+If you prefer other tools installed locally, use the following connection details:
 * Hostname: localhost
 * Port: 15432
+
+To connect with e.g. psql: `psql -W -U illarion -h localhost -p 15432 illarion`
 
 ## 8. Updating the server
 

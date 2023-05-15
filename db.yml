@@ -25,15 +25,22 @@ services:
       timeout: 5s
       retries: 10
 
-  phppgadmin:
+  pgadmin:
     restart: always
-    image: bitnami/phppgadmin:7.13.0
+    image: dpage/pgadmin4:7
     depends_on:
       - db
     ports:
-      - "8080:8080"
+      - "8080:80"
+    volumes:
+      - type: bind
+        source: ./db-servers.json
+        target: /pgadmin4/servers.json
     environment:
-      - DATABASE_HOST=db
+      PGADMIN_DEFAULT_EMAIL: user@illarion.local
+      PGADMIN_DEFAULT_PASSWORD: illarion
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
     logging:
       driver: none
 

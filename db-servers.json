@@ -1,0 +1,12 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "Local Dev",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "illarion",
+            "Host": "db",
+            "MaintenanceDB": "postgres"
+        }
+    }
+}
